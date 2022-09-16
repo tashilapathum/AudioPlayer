@@ -175,7 +175,7 @@ import java.net.URLConnection;
             try {
                 mediaPlayer.setDataSource(path);
                 mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mediaPlayer.prepare();
+                mediaPlayer.prepareAsync();
                 mediaPlayer.setVolume(10, 10);
                 //START and PAUSE are in other listeners
                 mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
